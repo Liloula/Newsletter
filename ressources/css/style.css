@@ -1,0 +1,79 @@
+/*----------general-------------*/
+
+html {
+  background: #fff;                               /* couleur de fond */
+  font-family:  ‘Lato’,‘Arial’, sans-serif;       /* police de caractère */
+  font-weight : 300;                              /* épaisseur de la police */
+  font-size: 20px;                                /* taille de la police */
+  color: #555;                                    /* couleur de la police */
+  text-rendering: optimizeLegibility;             /*  /// Voir PDF */
+}
+.row{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header{
+  background: linear-gradient(to right, #3e5151, #decba4),url(img/boxer.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.Boxer-text-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1140px;
+  transform: translate(-50%,-50%);
+}
+
+/*-----------------boutont-----------------*/
+
+.btn{
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  font-weight: 100;
+
+}
+
+.btn:hover{
+  border: 3px solid pink;
+}
+
+.btn-full{
+  background-color: pink;
+  color: #fff;
+}
+
+.btn-ghost{
+  color: pink;
+}
+
+.btn-ghost:hover {
+  background-color: black;
+  color:white;
+}
+/*------------bouton end------------*/
+.logo{
+height: 200px;
+float: left;
+margin-top: 20px
+}
+/*-----------menu----------------*/
+.main-nav{
+list-style: none;
+float: right;
+margin-top: 30px
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+.main-nav li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 90%;
+}
