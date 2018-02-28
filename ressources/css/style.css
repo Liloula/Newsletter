@@ -14,10 +14,10 @@ html {
 }
 
 header{
-  background: linear-gradient(to right, #3e5151, #decba4),url(img/boxer.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+ background-image: linear-gradient(rgba(25, 127, 40, 0.7), rgba(49, 255, 81, 0.7)), url(img/boxer.jpg); /* Ajout background et filtre */
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
 }
 .Boxer-text-box{
   position: absolute;
