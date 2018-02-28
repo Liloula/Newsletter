@@ -14,7 +14,7 @@ html {
 }
 
 header{
- background-image: linear-gradient(rgba(62, 81, 81, 0.7), rgba(222, 203, 164, 0.7)), url(img/boxer.jpg); /* Ajout background et filtre */
+ background-image: linear-gradient(rgba(62, 81, 81, 0.8), rgba(222, 203, 164, 0.8)), url(img/boxer.jpg); /* Ajout background et filtre */
 
 
  background-size: cover;
@@ -59,7 +59,7 @@ header{
 /*------------bouton end------------*/
 .logo{
 height: 200px;
-float: left;
+float:left;
 margin-top: 20px
 }
 /*-----------menu----------------*/
