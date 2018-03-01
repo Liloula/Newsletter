@@ -101,6 +101,7 @@ margin-top: 30px
 .range-photos{
   list-style:none;
   width: 100%;
+  weight: 75%;
 }
 .range-photo li{
 display: block;
