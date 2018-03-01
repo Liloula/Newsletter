@@ -80,7 +80,9 @@ margin-top: 30px
   color: #fff;
   font-size: 90%;
 }
+/*------------fin menu-------------*/
 
+/*-----------icon-----------------*/
 .ion-ios-paw{
   font-size: 40px;
   color: #ff9f1a;
@@ -89,7 +91,34 @@ margin-top: 30px
 .col-md-8{
   text-align: left;
 }
-
+/*----------newslettre--------------*/
 .newslettre{
   text-align: right;
+}
+
+/*--------------range photo---------*/
+
+.range-photos{
+  list-style:none;
+  width: 100%;
+}
+.range-photo li{
+display: block;
+float: left;
+width: 25%
+}
+.photo{
+  width: auto;
+  overflow: hidden;
+  background-color: #cab89a;
+}
+.photo img{
+  opacity: 0.4;
+  width: 100%;
+  transform: scale(1.5);
+  transition: transform 2s,opacity 2s;
+}
+.photo img:hover{
+  opacity: 1;
+  transform: scale(1);
 }
