@@ -88,12 +88,14 @@ margin-top: 30px
   color: #ff9f1a;
 }
 
-.col-md-8{
+.col-md-3{
   text-align: left;
 }
 /*----------newslettre--------------*/
 .newslettre{
-  text-align: right;
+  height: 200px;
+  padding: 10px 10px;
+
 }
 
 /*--------------range photo---------*/
