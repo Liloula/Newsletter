@@ -22,13 +22,15 @@ header{
  height: 100vh;
 }
 .Boxer-text-box{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1140px;
-  transform: translate(-50%,-50%);
+margin-top: 10px;
 }
 
+body{
+  background: #ffd89b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+opacity: 0.9;
+}
 /*-----------------boutont-----------------*/
 
 .btn{
@@ -60,9 +62,17 @@ header{
 .logo{
 height: 200px;
 float:left;
-
 margin-top: 20px
 }
+
+.logo{
+  height: 100px;
+  float: left;
+  margin-top: 20px;
+}
+
+.sticky .logo{display: none;}
+
 /*-----------menu----------------*/
 .main-nav{
 list-style: none;
@@ -76,6 +86,20 @@ margin-top: 30px
   text-transform: uppercase;
 }
 .main-nav li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 90%;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sticky .main-nav li a{
   text-decoration: none;
   color: #fff;
   font-size: 90%;
@@ -95,11 +119,13 @@ margin-top: 30px
 .newslettre{
   height: 200px;
   padding: 10px 10px;
-
 }
 
 /*--------------range photo---------*/
-
+.row-chien{
+max-width: 1200px;
+margin: 0 auto;
+}
 .range-photos{
   list-style:none;
   width: 100%;
@@ -108,7 +134,7 @@ margin-top: 30px
 .range-photo li{
 display: block;
 float: left;
-width: 25%
+width: 25%;
 }
 .photo{
   width: auto;
@@ -120,8 +146,76 @@ width: 25%
   width: 100%;
   transform: scale(1.5);
   transition: transform 2s,opacity 2s;
+  height: 50%;
 }
 .photo img:hover{
   opacity: 1;
   transform: scale(1);
 }
+
+/*------------------------------
+    10. START COUNTUP SECTION
+------------------------------*/
+
+.overlay {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ffd89b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.9;
+  }
+
+#countup {
+    position: relative;
+}
+
+#countup .countup-box {
+  margin-top: 50px;
+
+}
+
+#countup .countup-box .count-num {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#countup .countup-box .count-name {
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+
+/*------------------------------
+    10. END COUNTUP SECTION
+------------------------------*/
+
+
+
+/*----------footer------------*/
+footer{
+  background-color: black;
+  font-size: 80%;
+}
+
+.footer-nav{
+  list-style: none;
+  float: left;
+  color: orange;
+}
+
+.footer-social{
+  list-style: none;
+  float: left;
+  color: orange;
+}
+
+.footer-nav li, .footer-social li{
+  display:inline-block;
+  margin-right: 25px;
