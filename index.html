@@ -10,7 +10,29 @@
   <link rel="icon" type="image/x-icon" href="ressources/css/img/favicon.ico" />
   <link rel="shortcut icon" type="image/x-icon" href="ressources/css/img/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <style>
+  .cRetour {
+    border-radius:3px;
+    padding:10px;
+    font-size:15px;
+    text-align:center;
+    color:#fff;
+    background:rgba(0, 0, 0, 0.25);
+    z-index:99999;
+    transition:all ease-in 0.2s;
+    position: fixed;
+    cursor: pointer;
+    bottom: 1em;
+    right: 20px;
+    display: none;
+  }
+  .cRetour:before{ content: "\25b2"; }
+  .cRetour:hover{
+    background:rgba(0, 0, 0, 1);
+    transition:all ease-in 0.2s;
+  }
+  </style>
 
   <!-- Bootstrap CSS -->
 
@@ -164,6 +186,11 @@
           </section>
           <!-- End Video Section -->
 
+          <!--newslettre-->
+          <div class="newslettre">
+            <iframe width="300" height="150" src="https://my.sendinblue.com/users/subscribe/js_id/355xx/id/1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;"></iframe>
+          </div>
+
           <!--footer-->
           <section>
             <footer>
@@ -185,10 +212,31 @@
               </section>
             </footer>
 
+            <script>
+            jQuery(document).ready(function() {
+              var duration = 500;
+              jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > 100) {
+                  // Si un défillement de 100 pixels ou plus.
+                  // Ajoute le bouton
+                  jQuery('.cRetour').fadeIn(duration);
+                } else {
+                  // Sinon enlève le bouton
+                  jQuery('.cRetour').fadeOut(duration);
+                }
+              });
 
-            <div class="newslettre">
-              <iframe width="540" height="252" src="https://my.sendinblue.com/users/subscribe/js_id/355xx/id/1" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;"></iframe>
-            </div>
+              jQuery('.cRetour').click(function(event) {
+                // Un clic provoque le retour en haut animé.
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+              })
+            });
+            </script>
+
+            <div class="cRetour"></div>
+
             <!--jquery-->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

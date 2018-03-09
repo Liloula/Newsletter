@@ -123,7 +123,7 @@ margin-top: 30px
 /*----------newslettre--------------*/
 .newslettre{
   height: 200px;
-  padding: 10px 10px;
+  padding-left: 10px 10px;
 }
 
 /*--------------range photo---------*/
@@ -222,7 +222,8 @@ width: 25%;
 /*----------footer------------*/
 footer{
   background-color: black;
-  font-size: 80%;
+  font-size: 100%;
+  padding-top: 15px;
 }
 
 .footer-nav{
