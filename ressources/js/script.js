@@ -15,3 +15,7 @@ $(document).ready(function() {
     $(".js-scroll-photos").click(function() {
       $("html, body").animate({scrollTop: $(".js-section-photos").offset().top});
     })
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+    } 
